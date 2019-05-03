@@ -13,8 +13,12 @@ server.use('/api/action', actionRouter);
 server.use('/api/project', projectRouter);
 
 // sanity check route
-server.get('/', (req, res) => {
-  res.status(200).json({ hello: 'World!' });
+// server.get('/', (req, res) => {
+//   res.status(200).json({ hello: 'World!' });
+// });
+
+server.get("/", (req, res) => {
+  res.send("HELLO WORLDLDLDLDLDL!!!!");
 });
 
 module.exports = server;
